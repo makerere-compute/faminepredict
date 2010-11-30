@@ -16,6 +16,8 @@ ntrials = 1;
 scores = zeros(ntrials,max_iter,2);
 % can decide whether to optmise greedily or with simulated annealing
 use_stochastic_optimisation = 1
+% use classification accuracy as tree objective function
+use_classification_for_tree_eval = 1
 
 if ~exist('landsize')
     error('Use readhouseholddata.m to load demographic data.')
